@@ -26,8 +26,8 @@ function App() {
       </header>
       {page === "home" ? <Home page={page} setPage={setPage} /> : <></>}
       {page === "weather" ? <Weather page={page} setPage={setPage} weather={weather} /> : <></>}
-      {page === "yesterdayweather" ? <YesterdaysWeather page={page} setPage={setPage} weather={weather} /> : <></>}
-      {page === "2001weather" ? <Weather2001 page={page} setPage={setPage} weather={weather} /> : <></>}
+      {page === "yesterdayweather" ? <YesterdaysWeather page={page} setPage={setPage}  /> : <></>}
+      {page === "2001weather" ? <Weather2001 page={page} setPage={setPage}  /> : <></>}
     </div>
   );
 }
