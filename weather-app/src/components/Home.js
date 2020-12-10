@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Home = ({page,setPage}) => {
+    
     const weatherHandler = (a) => {
         setPage("weather")
     }
