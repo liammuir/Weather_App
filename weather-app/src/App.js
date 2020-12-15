@@ -3,7 +3,7 @@ import {useState,useEffect} from 'react';
 import axios from 'axios';
 import Weather from './components/Weather';
 import YesterdaysWeather from './components/YesterdaysWeather';
-import Weather2001 from './components/Weather2001';
+import WeatherBrazil from './components/WeatherBrazil';
 
 function App() {
   const [page,setPage] = useState("weather")
@@ -34,10 +34,10 @@ function App() {
       	</header>
 	 	    <button onClick={() => {setPage("weather")}} className="link">Todays Weather</button>
         <button onClick={() => {setPage("yesterdayweather")}} className="link">Yesterdays Weather</button>
-    	  <button onClick={() => {setPage("2001weather")}} className="link">Weather on 2001, Oct 2.</button>
+    	  <button onClick={() => {setPage("weatherbrazil")}} className="link">Weather on 2001, Oct 2.</button>
       	{page === "weather" ? <Weather page={page} setPage={setPage} weather={weather} /> : <></>}
       	{page === "yesterdayweather" ? <YesterdaysWeather page={page} setPage={setPage} weather={weather}  /> : <></>}
-      	{page === "2001weather" ? <Weather2001 page={page} setPage={setPage}  /> : <></>}
+      	{page === "weatherbrazil" ? <WeatherBrazil page={page} setPage={setPage} weather={weather}  /> : <></>}
     </div>
   );
 }
